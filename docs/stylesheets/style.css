@@ -69,9 +69,12 @@ body{
     margin: auto;
     width: 150px;
     height: 150px;
-    background-color: green;
+    /*background-color: green;*/
     max-width: none;
     position: relative;
+    background-image: url('../assets/profilepic.jpg');
+    background-size: contain;
+
 
     border-radius: 50%;
     border: 1px white solid;
