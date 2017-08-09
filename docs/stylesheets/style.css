@@ -5,6 +5,7 @@
     padding: 0;
 
     transition-duration: 2s;
+    /*overflow: hidden;*/
 }
 
 body{
@@ -13,6 +14,7 @@ body{
 }
 
 #contGames{
+    /*overflow: hidden;*/
     width: 50%;
     height: 100%;
     position: absolute;
@@ -20,6 +22,7 @@ body{
 }
 
 #contArts{
+    /*overflow: hidden;*/
     width: 50%;
     height: 100%;
     margin-left: 50%;
@@ -87,23 +90,23 @@ body{
 }
 
 /*Hovering Games*/
-#contGames:hover ~ #contArts{
-    transform: translate(25%,0) scale(.50,1);
-}
-#contGames:hover ~ #contProfileOuter {
-    transform: translate(60%,-50%);
-    width: 300px;
-}
-#contGames:hover ~ #contProfileInner{
-    transform: translate(0,100%);
-    width: 300px;
-}
-#contGames:hover {
-    transform: scale(2,1);
-}
+/*#contGames:hover ~ #contArts{*/
+    /*transform: translate(25%,0) scale(.50,1);*/
+/*}*/
+/*#contGames:hover ~ #contProfileOuter {*/
+    /*transform: translate(60%,-50%);*/
+    /*width: 300px;*/
+/*}*/
+/*#contGames:hover ~ #contProfileInner{*/
+    /*transform: translate(0,100%);*/
+    /*width: 300px;*/
+/*}*/
+/*#contGames:hover {*/
+    /*transform: scale(2,1);*/
+/*}*/
 /*END Hovering Games*/
 
 
-#contArts:hover ~ #contGames{
-    background-color: bisque;
-}
+/*#contArts:hover ~ #contGames{*/
+    /*background-color: bisque;*/
+/*}*/
