@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    transition-duration: 2s;
+}
+
+body{
+
+    /*overflow-x: hidden;*/
+}
+
+#contGames{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+}
+
+#contArts{
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+#contProfileOuter{
+    width: 35%;
+    height: 100%;
+    /*background-color: aqua;*/
+    /*opacity: 0.7;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#contProfileInner{
+    position: relative;
+    top: 50%;
+    margin: auto;
+
+    width: 300px;
+    height: 325px;
+
+    /*background-color: purple;*/
+    /*opacity: 0.4;*/
+
+     -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#picProfile{
+    top: 25px;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    max-width: none;
+    position: relative;
+
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+
+#labelMyName{
+    position: relative;
+    margin-top: 40px;
+    font-family: Montserrat;
+    font-size: 64px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 2px 6px black ;
+}
+
+/*Hovering Games*/
+#contGames:hover ~ #contArts{
+    transform: translate(25%,0) scale(.50,1);
+}
+#contGames:hover ~ #contProfileOuter {
+    transform: translate(60%,-50%);
+    width: 300px;
+}
+#contGames:hover ~ #contProfileInner{
+    transform: translate(0,100%);
+    width: 300px;
+}
+#contGames:hover {
+    transform: scale(2,1);
+}
+/*END Hovering Games*/
+
+
+#contArts:hover ~ #contGames{
+    background-color: bisque;
+}
